@@ -14,6 +14,8 @@
 5. On first boot cloud-init configures the RPI and installs OS2BorgerPC client. Wait for cloud-init to finish.
 6. Run `sudo os2borgerpc_kiosk_setup`
 
+7. BIBSDB SPECIFIC: Run `sudo os2borgerpc_kiosk_setup` before cloning the SD-card. Saves times during installation.
+
 ## Cloning your RPI ##
 After step 5 - before you run `sudo os2borgerpc_kiosk_setup` - is a good time to clone your RPI. The result is a generic OS2BorgerPC RPI image. This image can be applied to new SD-cards using the Raspberry PI Imager software. In this way you can quickly make more OS2BorgerPC Kiosk RPIs. 
 
