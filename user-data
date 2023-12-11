@@ -33,6 +33,8 @@ runcmd:
   - 'rm -r os2borgerpc-kiosk-rpi-image-main'
   - 'cd /usr/local/bin'
   - './install_dependencies.sh'
+  - 'sed -ir "s/^[#]*\s*preserve_hostname:.*/preserve_hostname: true/" /etc/cloud/cloud.cfg'
   # Bibsdb only
   - 'curl -Lo sk_register_new_os2borgerpc_client.sh "https://raw.githubusercontent.com/bibsdb/bibbox_documentation/bibsdb/install/sk_register_new_os2borgerpc_client.sh"'
   - 'chmod +x sk_register_new_os2borgerpc_client.sh'
+  
